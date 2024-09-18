@@ -1,0 +1,24 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '2.0.10'
+}
+
+group = 'com.cpik'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+
+    // https://mvnrepository.com/artifact/com.google.ortools/ortools-java
+    implementation("com.google.ortools:ortools-java:9.11.4210")
+}
+
+test {
+    useJUnitPlatform()
+}
+kotlin {
+    jvmToolchain(21)
+}
