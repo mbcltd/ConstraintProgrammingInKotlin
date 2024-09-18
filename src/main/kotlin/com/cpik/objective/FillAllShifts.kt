@@ -1,6 +1,6 @@
 package com.cpik.objective
 
-import com.cpik.constraint.Assignment
+import com.cpik.model.Assignment
 import com.google.ortools.sat.LinearExpr
 
 /**
