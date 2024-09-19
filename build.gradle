@@ -1,5 +1,6 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '2.0.10'
+    id 'application'
 }
 
 group = 'com.cpik'
@@ -16,9 +17,14 @@ dependencies {
     implementation("com.google.ortools:ortools-java:9.11.4210")
 }
 
+application {
+    mainClass = 'com.cpik.MainKt'
+}
+
 test {
     useJUnitPlatform()
 }
+
 kotlin {
     jvmToolchain(21)
 }
